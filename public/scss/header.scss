@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+header {
+  @include flex(center, space-between, row);
+  background-color: $orange;
+  padding: 10px 25px;
+
+  img {
+    border: 3px solid $white;
+    border-radius: 50%;
+    width: 65px;
+  }
+}
+nav {
+  align-self: center;
+  ul {
+    @include flex(center, space-between, row);
+    gap: 20px;
+    margin: 0px;
+    a {
+      padding: 5px;
+      color: $white;
+      text-decoration: none;
+      font-family: "Roboto Mono", monospace;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    @include flex(center, center, row);
+    nav {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  nav {
+    ul {
+      display: flex;
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+}

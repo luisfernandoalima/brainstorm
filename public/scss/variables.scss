@@ -1,0 +1,29 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+// Cores
+$pink: #f25c84;
+$blue: #06bfad;
+$yellow: #f2a03d;
+$orange: #f28749;
+$gray: #f2e4dc;
+$white: #fffafa;
+$black: #1c1c1c;
+
+// Config
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body{
+      background-color: $white
+  }
+
+// Mixins
+@mixin flex($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
