@@ -9,7 +9,7 @@ $orange: #f28749;
 $gray: #f2e4dc;
 $white: #fffafa;
 $black: #1c1c1c;
-
+$backgroundColor: #F2E4DC;
 // Config
 * {
     margin: 0px;
@@ -17,7 +17,7 @@ $black: #1c1c1c;
   }
   
   body{
-      background-color: $white
+      background-color: $backgroundColor
   }
 
 // Mixins
