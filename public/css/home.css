@@ -116,6 +116,7 @@ body {
   background-color: #fffafa;
   border-radius: 30px;
   padding-left: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4509803922);
 }
 .search-bar-div .search-bar form input {
   display: block;
@@ -138,6 +139,88 @@ body {
 }
 .search-bar-div .search-bar form button i {
   font-size: 20px;
+}
+
+h1 {
+  display: none;
+}
+
+.categories-div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.categories-div h2 {
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 2px solid #1c1c1c;
+}
+.categories-div ul {
+  width: 100%;
+}
+.categories-div ul li {
+  margin-bottom: 10px;
+}
+.categories-div ul li a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 20px;
+}
+.categories-div ul li i {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f25c84;
+}
+
+#carousel-de-destaques {
+  border: 2px solid #1c1c1c;
+}
+
+.img-sala-div {
+  display: grid;
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/salas/001.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-sala-div .info-sala-div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(28, 28, 28, 0.7254901961);
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.img-sala-div .info-sala-div .info-sala {
+  color: #fffafa;
+}
+.img-sala-div .info-sala-div .info-sala h2 {
+  font-size: 25px;
+}
+.img-sala-div .info-sala-div .info-sala h3 {
+  font-size: 15px;
+}
+.img-sala-div button {
+  position: absolute;
+  justify-self: center;
+  padding: 5px 15px;
+  bottom: 45px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f25c84;
+  transition: 0.3s;
+}
+.img-sala-div button:hover {
+  background-color: #ee2d60;
+}
+.img-sala-div button a {
+  color: #fffafa;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=home.css.map */
