@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -72,6 +73,7 @@ body {
 }
 
 footer {
+  margin-top: 50px;
   padding: 10px 25px;
   background-color: #f28749;
   text-align: center;
@@ -89,6 +91,101 @@ footer .creator i {
   font-size: 25px;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F2E4DC;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.slider .slide-salas {
+  width: 90%;
+}
+.slider .slide-salas .card {
+  width: 300px;
+}
+.slider .slide-salas .card .card-body img {
+  display: block;
+  width: 100%;
+}
+.slider .slide-salas .card .card-body h3,
+.slider .slide-salas .card .card-body h4 {
+  margin-bottom: 0px;
+}
+.slider .slide-salas .card .card-body .grade {
+  margin-top: 10px;
+}
+.slider .slide-salas .card .card-body .grade span {
+  margin-left: 5px;
+}
+.slider .slide-salas .card .card-body button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f25c84;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.slider .slide-salas .card .card-body button a {
+  color: #fffafa;
+  font-size: 18px;
+}
+.slider .slide-salas .card .card-body button:hover {
+  background-color: #ee2d60;
+}
+.slider .slider-btn-left,
+.slider .slider-btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #fffafa;
+  width: 35px !important;
+  height: 35px;
+  transition: 0.3s;
+}
+.slider .slider-btn-left:hover,
+.slider .slider-btn-right:hover {
+  background-color: #ffc7c7;
+}
+
+@media (max-width: 480px) {
+  .slide-salas .card .card-body {
+    padding: 4px;
+  }
+  .slide-salas .card .card-body .grade {
+    display: block;
+    margin: 5px auto !important;
+  }
+  .slide-salas .card .card-body .grade i {
+    font-size: 12px;
+  }
+  .slide-salas .card .card-body .grade span {
+    margin-left: 5px;
+  }
+  .slide-salas .card .card-body button {
+    margin: 0px !important;
+  }
+  .slide-salas .swiper-slide h3 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .slide-salas .swiper-slide h4 {
+    font-size: 14px;
+  }
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -221,6 +318,12 @@ h1 {
 .img-sala-div button a {
   color: #fffafa;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -1,6 +1,7 @@
 // Base
 @import "header.scss";
 @import "footer.scss";
+@import "object/slider.scss";
 
 // Objects
 @import "object/searchBar.scss";
@@ -85,7 +86,7 @@ h1 {
     transition: 0.3s;
 
     &:hover {
-      background-color: darken($pink, 10);
+      background-color: darken($pink, 10%);
     }
 
     a {
@@ -96,4 +97,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  aside{
+    display: none;
+  }
 }

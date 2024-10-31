@@ -1,3 +1,3 @@
-import { initializeCarousel } from "./models/slider.mjs";
+import { initializeCarousel } from "./models/swiper.mjs";
 
 initializeCarousel()
