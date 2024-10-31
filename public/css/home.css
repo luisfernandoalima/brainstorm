@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  background-color: #fffafa;
+  background-color: #F2E4DC;
 }
 
 header {
@@ -57,6 +60,268 @@ header img {
     flex-direction: row;
   }
   header .top-navbar {
+    display: none;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F2E4DC;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 10px 25px;
+  background-color: #f28749;
+  text-align: center;
+}
+footer .creator p {
+  margin: 0px;
+}
+footer .creator p,
+footer .creator a,
+footer .creator i {
+  color: #fffafa;
+}
+footer .creator i {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F2E4DC;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.slider .slide-salas {
+  width: 90%;
+}
+.slider .slide-salas .card {
+  width: 300px;
+}
+.slider .slide-salas .card .card-body img {
+  display: block;
+  width: 100%;
+}
+.slider .slide-salas .card .card-body h3,
+.slider .slide-salas .card .card-body h4 {
+  margin-bottom: 0px;
+}
+.slider .slide-salas .card .card-body .grade {
+  margin-top: 10px;
+}
+.slider .slide-salas .card .card-body .grade span {
+  margin-left: 5px;
+}
+.slider .slide-salas .card .card-body button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f25c84;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.slider .slide-salas .card .card-body button a {
+  color: #fffafa;
+  font-size: 18px;
+}
+.slider .slide-salas .card .card-body button:hover {
+  background-color: #ee2d60;
+}
+.slider .slider-btn-left,
+.slider .slider-btn-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 50%;
+  background-color: #fffafa;
+  width: 35px !important;
+  height: 35px;
+  transition: 0.3s;
+}
+.slider .slider-btn-left:hover,
+.slider .slider-btn-right:hover {
+  background-color: #ffc7c7;
+}
+
+@media (max-width: 480px) {
+  .slide-salas .card .card-body {
+    padding: 4px;
+  }
+  .slide-salas .card .card-body .grade {
+    display: block;
+    margin: 5px auto !important;
+  }
+  .slide-salas .card .card-body .grade i {
+    font-size: 12px;
+  }
+  .slide-salas .card .card-body .grade span {
+    margin-left: 5px;
+  }
+  .slide-salas .card .card-body button {
+    margin: 0px !important;
+  }
+  .slide-salas .swiper-slide h3 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  .slide-salas .swiper-slide h4 {
+    font-size: 14px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F2E4DC;
+}
+
+.search-bar-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.search-bar-div .search-bar {
+  width: 70%;
+}
+.search-bar-div .search-bar form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #fffafa;
+  border-radius: 30px;
+  padding-left: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4509803922);
+}
+.search-bar-div .search-bar form input {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 10px;
+  width: 100%;
+}
+.search-bar-div .search-bar form input:focus {
+  outline: none;
+}
+.search-bar-div .search-bar form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  background-color: transparent;
+  width: 50px;
+}
+.search-bar-div .search-bar form button i {
+  font-size: 20px;
+}
+
+h1 {
+  display: none;
+}
+
+.categories-div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+.categories-div h2 {
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  border-bottom: 2px solid #1c1c1c;
+}
+.categories-div ul {
+  width: 100%;
+}
+.categories-div ul li {
+  margin-bottom: 10px;
+}
+.categories-div ul li a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 20px;
+}
+.categories-div ul li i {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #f25c84;
+}
+
+#carousel-de-destaques {
+  border: 2px solid #1c1c1c;
+}
+
+.img-sala-div {
+  display: grid;
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/salas/001.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-sala-div .info-sala-div {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: rgba(28, 28, 28, 0.7254901961);
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+.img-sala-div .info-sala-div .info-sala {
+  color: #fffafa;
+}
+.img-sala-div .info-sala-div .info-sala h2 {
+  font-size: 25px;
+}
+.img-sala-div .info-sala-div .info-sala h3 {
+  font-size: 15px;
+}
+.img-sala-div button {
+  position: absolute;
+  justify-self: center;
+  padding: 5px 15px;
+  bottom: 45px;
+  border: none;
+  border-radius: 30px;
+  background-color: #f25c84;
+  transition: 0.3s;
+}
+.img-sala-div button:hover {
+  background-color: #ee2d60;
+}
+.img-sala-div button a {
+  color: #fffafa;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  aside {
     display: none;
   }
 }
