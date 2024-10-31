@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+footer {
+  margin-top: 50px;
+  padding: 10px 25px;
+  background-color: $orange;
+    text-align: center;
+  .creator {
+    p {
+      margin: 0px;
+    }
+
+    p,
+    a,
+    i {
+      color: $white;
+    }
+
+    i{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+  }
+}
