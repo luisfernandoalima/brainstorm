@@ -8,7 +8,7 @@ class Carousel  {
   initializeCarousel(){
     const swiper = new Swiper(`${this.name}`, {
       direction: "horizontal",
-      spaceBetween: 30,
+      spaceBetween: 20,
       navigation: {
         nextEl: `${this.btnRight}`,
         prevEl: `${this.btnLeft}`,

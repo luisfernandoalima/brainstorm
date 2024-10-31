@@ -28,7 +28,10 @@ app.use(express.static("public"))
 
 // Rotas
 import router from "./routes/router.mjs";
+import { userRouter } from "./routes/user.mjs";
+
 app.use("/", router);
+app.use("/user", userRouter)
 
 app.listen(PORT, () => {
   console.log("Servidor Online!");
