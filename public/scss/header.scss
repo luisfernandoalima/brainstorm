@@ -8,10 +8,10 @@ header {
   img {
     border: 3px solid $white;
     border-radius: 50%;
-    width: 65px;
+    width: 60px;
   }
 }
-nav {
+.top-navbar {
   align-self: center;
   ul {
     @include flex(center, space-between, row);
@@ -30,21 +30,22 @@ nav {
   }
 }
 
-@media (max-width: 430px) {
-  header {
-    @include flex(center, center, row);
-    nav {
-      display: none;
+
+@media (max-width: 520px) {
+  .top-navbar {
+    ul {
+      gap: 10px;
+      font-size: 14px;
     }
   }
 }
 
-@media (max-width: 520px) {
-  nav {
-    ul {
-      display: flex;
-      gap: 10px;
-      font-size: 14px;
+
+@media (max-width: 430px) {
+  header {
+    @include flex(center, center, row);
+    .top-navbar {
+      display: none;
     }
   }
 }

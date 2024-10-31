@@ -1,0 +1,103 @@
+@import "../variables.scss";
+
+.slider {
+  @include flex(center, space-between, row);
+
+  .slide-salas {
+    width: 90%;
+
+    .card {
+      width: 300px;
+
+      .card-body {
+        img {
+          display: block;
+          width: 100%;
+        }
+
+        h3,
+        h4 {
+          margin-bottom: 0px;
+        }
+
+        .grade {
+          margin-top: 10px;
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        button {
+          margin-top: 10px;
+          border: none;
+          border-radius: 30px;
+          background-color: $pink;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+
+          a {
+            color: $white;
+            font-size: 18px;
+          }
+
+          &:hover {
+            background-color: darken($pink, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  .slider-btn-left,
+  .slider-btn-right {
+    @include flex(center, center, row);
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: $white;
+    width: 35px !important;
+    height: 35px;
+    transition: 0.3s;
+    &:hover {
+      background-color: darken($white, 10%);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-salas {
+    .card {
+      .card-body {
+        padding: 4px;
+
+        .grade {
+          display: block;
+          margin: 5px auto !important;
+
+          i {
+            font-size: 12px;
+          }
+
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        button{
+          margin: 0px !important;
+        }
+      }
+    }
+    .swiper-slide {
+      h3 {
+        margin-top: 5px;
+        font-size: 18px;
+      }
+
+      h4 {
+        font-size: 14px;
+      }
+    }
+  }
+}

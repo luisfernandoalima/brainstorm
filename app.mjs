@@ -1,7 +1,7 @@
 // Módulos
 import express from "express";
 import handlebars from "express-handlebars";
-
+import bodyParser from "body-parser";
 // Configurações
 // Express
 const app = express();
@@ -18,6 +18,10 @@ app.engine(
   })
 );
 app.set('view engine', 'handlebars')
+
+// Body-Parser
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
 
 // Arquivos estáticos
 app.use(express.static("public"))

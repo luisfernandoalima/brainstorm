@@ -1,0 +1,40 @@
+@import "../variables.scss";
+
+.search-bar-div {
+  @include flex(center, center, row);
+  width: 100%;
+
+  .search-bar {
+    width: 70%;
+
+    form {
+      @include flex(center, center, row);
+      background-color: $white;
+      border-radius: 30px;
+      padding-left: 10px;
+      box-shadow: 0px 4px 8px #00000073;
+
+      input {
+        display: block;
+        border: none;
+        border-radius: 30px;
+        padding: 5px 10px;
+        width: 100%;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        @include flex(center, center, row);
+        border: none;
+        background-color: transparent;
+        width: 50px;
+
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
