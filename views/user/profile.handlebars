@@ -1,44 +1,435 @@
 <main>
-    <div class="container">
-        <div class="user-info">
-            <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div class="profile-info-div">
-                        <div class="profile-picture">
-                            <img src="/img/pictures/user.png" alt="Foto do usuário">
-                        </div>
-                        <div class="profile-info">
-                            <div class="info-container">
-                                <p><strong>Nome:</strong></p>
-                                <p>meu nome</p>
-                            </div>
-                            <div class="info-container">
-                                <p><strong>E-mail:</strong></p>
-                                <p>meu e-mail</p>
-                            </div>
-                            <div class="info-container">
-                                <p><strong>Contato:</strong></p>
-                                <p>meu telefone</p>
-                            </div>
-                            <button><a href="">Editar <i class="fa-solid fa-pencil"></i></a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="profile-plan-div">
-                        <div class="profile-plan">
-                            Plano bronze
-                        </div>
-                        <div class="plan-members">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                    <div class="profile-history-div">
-                        <div class="profile-history"></div>
-                    </div>
-                </div>
+  <div class="container">
+    <div class="user-info">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="profile-info-div">
+            <div class="profile-picture">
+              <img src="/img/pictures/user.png" alt="Foto do usuário" />
             </div>
+            <div class="profile-info">
+              <div class="info-container">
+                <p><strong>Nome:</strong></p>
+                <p>meu nome</p>
+              </div>
+              <div class="info-container">
+                <p><strong>E-mail:</strong></p>
+                <p>meu e-mail</p>
+              </div>
+              <div class="info-container">
+                <p><strong>Contato:</strong></p>
+                <p>meu telefone</p>
+              </div>
+              <button><a href="">Editar
+                  <i class="fa-solid fa-pencil"></i></a></button>
+            </div>
+          </div>
         </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="profile-plan-div profile-plan-div-bronze">
+            <a href=""><i class="fa-solid fa-arrows-rotate"></i></a>
+            <div class="profile-plan">
+              <i class="fa-solid fa-star mt-4 bronze"></i>
+              <h1 class="bronze mt-3">PLANO BRONZE</h1>
+
+              <p><b>Data de aquisição:</b> <span>DataInicio</span></p>
+              <p><b>Data final:</b> <span>DataFinal</span></p>
+            </div>
+            <div class="plan-members">
+              <h2>Membros:</h2>
+              <div class="img-members">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="member">
+                      <img src="/img/pictures/user.png" alt="usuário" />
+                      <p>Nome</p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="member">
+                      <img src="/img/pictures/user.png" alt="usuário" />
+                      <p>Nome</p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="member">
+                      <img src="/img/pictures/user.png" alt="usuário" />
+                      <p>Nome</p>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="member">
+                      <a href="">
+                        <i class="fa-solid fa-plus"></i>
+
+                      </a>
+                      <p>Mais</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="profile-history-div">
+            <p>Histórico de Agendamentos</p>
+            <div class="profile-history">
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+                {{!-- Card --}}
+                <a href="" class="place-card">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="/img/salas/001.jpg" alt="Imagem de">
+                        </div>
+                        <div class="col-7 place-info" >
+                          <p>nomeLocal</p>  
+                          <p>dataLocal</p>
+                          <button>Visualizar</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </main>
