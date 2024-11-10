@@ -25,6 +25,10 @@ body {
   background-color: $backgroundColor;
 }
 
+.disable{
+  display: none !important;
+}
+
 // Mixins
 @mixin flex($align, $justify, $direction) {
   display: flex;

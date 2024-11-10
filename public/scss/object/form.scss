@@ -5,8 +5,8 @@ form {
     @include flex(start, center, column);
 
     margin-bottom: 5px;
-    label{
-        font-size: 18px;
+    label {
+      font-size: 18px;
     }
     input {
       display: block;
@@ -27,7 +27,7 @@ form {
 
       border: 2px solid $black;
       border-radius: 20px;
-      padding-right: 5px;
+      padding-right: 10px;
       width: 100%;
 
       input {
@@ -42,7 +42,7 @@ form {
       }
     }
   }
-  button {
+  .btn-submit {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -57,6 +57,11 @@ form {
 
     &:hover {
       background-color: darken($pink, 20%);
+    }
+
+    &:disabled {
+      background-color: grayscale($pink);
+      cursor: pointer;
     }
   }
 }
