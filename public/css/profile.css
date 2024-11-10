@@ -13,6 +13,10 @@ body {
   background-color: #f2e4dc;
 }
 
+.disable {
+  display: none !important;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -37,6 +41,10 @@ body {
 
 body {
   background-color: #f2e4dc;
+}
+
+.disable {
+  display: none !important;
 }
 
 @keyframes rotate {
@@ -117,6 +125,10 @@ body {
   background-color: #f2e4dc;
 }
 
+.disable {
+  display: none !important;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -160,8 +172,8 @@ footer .creator i {
   border-radius: 20px;
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4509803922);
 }
-.user-info .profile-info-div {
-  border-right: 2px solid #1c1c1c;
+.user-info hr {
+  display: none;
 }
 .user-info .profile-info-div .profile-picture {
   display: flex;
@@ -376,6 +388,18 @@ footer .creator i {
 }
 .user-info .profile-history-div .profile-history .place-card .place-info button:hover {
   background-color: #048e80;
+}
+
+@media (max-width: 768px) {
+  .row .col-sm-12 {
+    margin-bottom: 25px;
+  }
+  .row hr {
+    display: block;
+  }
+  .profile-plan-div {
+    height: fit-content !important;
+  }
 }
 
 /*# sourceMappingURL=profile.css.map */

@@ -9,8 +9,11 @@
   border-radius: 20px;
   box-shadow: 4px 6px 8px #00000073;
 
+  hr {
+    display: none;
+  }
+
   .profile-info-div {
-    border-right: 2px solid $black;
     .profile-picture {
       @include flex(center, center, row);
       img {
@@ -215,14 +218,30 @@
             color: white;
             padding: 1px;
             width: 100%;
-            transition: .3s;
+            transition: 0.3s;
 
-            &:hover{
+            &:hover {
               background-color: darken($blue, 10%);
             }
           }
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    .col-sm-12 {
+      margin-bottom: 25px;
+    }
+
+    hr {
+      display: block;
+    }
+  }
+
+  .profile-plan-div{
+    height: fit-content !important;
   }
 }
