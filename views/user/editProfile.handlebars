@@ -2,7 +2,7 @@
   <div class="container">
     <form action="" method="post" enctype="multipart/form-data" class="mt-4">
       <div class="row">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6 img-row">
           <div class="img-profile-div">
             <div class="img-profile">
               <img src="/img/pictures/user.png" alt="Foto do usuário" id="userPicture"/>
@@ -11,6 +11,39 @@
             <span class="userImageText mt-2">nome da foto</span>
             <label for="userImage" class="userImageButton mt-2">Escolher Imagem</label>
           </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="input-area">
+            <label for="userNameInput">Nome de usuário: </label>
+            <input type="text" name="userNameInput" id="userNameInput">
+          </div>
+          <div class="input-area">
+            <label for="userEmailInput">E-mail: </label>
+            <input type="email" name="userEmailInput" id="userEmailInput" placeholder="meuemail@email.com">
+          </div>
+          <div class="input-area">
+            <label for="userCellInput">Telefone: </label>
+            <input type="text" name="userCellInput" id="userCellInput">
+          </div>
+          <div class="input-area">
+            <label for="userBirthInput">Data de nascimento: </label>
+            <input type="date" name="userBirthInput" id="userBirthInput">
+          </div>
+          <div class="input-area">
+            <label for="userPasswordInput">Senha: </label>
+            <div class="inputPassword-div">
+              <input type="password" name="userPasswordInput" id="userPasswordInput">
+              <span><i class="fa-solid fa-eye passwordViewButton"></i></span>
+            </div>
+          </div>
+          <div class="input-area">
+            <label for="userRepeatPasswordInput">Confirmar senha: </label>
+            <div class="inputPassword-div">
+              <input type="password" name="userRepeatPasswordInput" id="userRepeatPasswordInput">
+              <span><i class="fa-solid fa-eye repeatPasswordViewButton"></i></span>
+            </div>
+          </div>
+          <button type="submit">SALVAR</button>
         </div>
       </div>
     </form>

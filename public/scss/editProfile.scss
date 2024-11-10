@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "header.scss";
 @import "footer.scss";
+@import "./object/form.scss";
 
 form {
   border-radius: 30px;
@@ -10,11 +11,15 @@ form {
   box-shadow: 4px 6px 8px #00000073;
   border: 2px solid $blue;
 
+  .img-row{
+    @include flex(center, center, column);
+  }
+
   .img-profile-div {
     @include flex(center, center, column);
 
     .img-profile {
-      width: 50%;
+      width: max-content;
       img {
         display: block;
         height: 200px;

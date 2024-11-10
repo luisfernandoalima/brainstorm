@@ -1,0 +1,62 @@
+@import "../variables.scss";
+
+form {
+  .input-area {
+    @include flex(start, center, column);
+
+    margin-bottom: 5px;
+    label{
+        font-size: 18px;
+    }
+    input {
+      display: block;
+      border: 2px solid $black;
+      border-radius: 20px;
+      padding: 3px 10px;
+      width: 100%;
+      font-size: 18px;
+
+      &:focus {
+        outline: none;
+        border-color: $pink;
+      }
+    }
+
+    .inputPassword-div {
+      @include flex(center, center, row);
+
+      border: 2px solid $black;
+      border-radius: 20px;
+      padding-right: 5px;
+      width: 100%;
+
+      input {
+        border: none;
+      }
+
+      i:hover {
+        cursor: pointer;
+      }
+      &:focus-within {
+        border-color: $pink;
+      }
+    }
+  }
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 3px;
+    border: none;
+    border-radius: 20px;
+    background-color: $pink;
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: darken($pink, 20%);
+    }
+  }
+}
