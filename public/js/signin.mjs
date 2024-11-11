@@ -66,7 +66,83 @@ cpfInput.addEventListener("change", () => {
 
     if (!correct) {
         toastufyMessage.showToastifyError("CPF inválido!")
-        cpfInput.value = ''
     }
   }
 });
+
+// Validador de senha
+
+const passwordInput = document.querySelector('#signinPassword')
+const repeatInputPassword = document.querySelector('#signinRepeatPassword')
+const btnSubmit = document.querySelector('.btn-submit')
+
+const checkErrors = () => {
+    let inputs = document.querySelectorAll("input");
+    let errorCount = 0;
+    let errorText = [];
+  
+    inputs.forEach((input) => {
+      if (input.value == "" || input.value == null || input.value == undefined) {
+        errorCount += 1;
+      }
+    });
+    if (errorCount != 0) {
+      errorText.push("Os campos não podem estar vazios!");
+    }
+  
+    let inputPassword = document.querySelector("#signinPassword");
+    let repeatInputPassword = document.querySelector("#signinRepeatPassword");
+  
+    if (inputPassword.value != repeatInputPassword.value) {
+      errorCount += 1;
+      errorText.push("As senhas devem ser iguais!");
+    }
+
+    let correct = checkCPF(cpfInput.value);
+
+    if (!correct) {
+        errorText.push("CPF inválido!")
+    }
+  
+    if (errorText.length > 0) {
+      return errorText;
+    } else {
+      return false;
+    }
+  };
+  
+  btnSubmit.addEventListener("mouseover", () => {
+    if (btnSubmit.disabled === true) {
+      let error = checkErrors();
+  
+      error.forEach((error) => {
+        toastufyMessage.showToastifyError(error);
+      });
+    }
+  });
+
+const checkInputs = () => {
+    let inputs = document.querySelectorAll("input");
+    let errorCount = 0;
+  
+    inputs.forEach((input) => {
+      if (input.value == "" || input.value == null || input.value == undefined) {
+        errorCount += 1;
+      }
+    });
+    
+    let inputPassword = document.querySelector("#signinPassword");
+    let repeatInputPassword = document.querySelector("#signinRepeatPassword");
+  
+    if (inputPassword.value != repeatInputPassword.value) {
+      errorCount += 1;
+    }
+  
+    if (errorCount == 0) {
+      btnSubmit.disabled = false;
+    } else {
+      btnSubmit.disabled = true;
+    }
+  };
+  
+  setInterval(checkInputs, 500)

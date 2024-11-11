@@ -175,6 +175,13 @@ main .row .logo-area .inputPassword-div,
 main .row .form-div .inputPassword-div {
   background-color: #fffafa;
 }
+main .row form {
+  margin: 30px 0px;
+  width: 100%;
+}
+main .row form h3 {
+  text-align: center;
+}
 main .row form i {
   width: 20px;
 }

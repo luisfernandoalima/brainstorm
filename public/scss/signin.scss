@@ -48,10 +48,17 @@ main {
       }
     }
 
-    form{
-        i{
-            width: 20px;
-        }
+    form {
+      margin: 30px 0px;
+      width: 100%;
+
+      h3 {
+        text-align: center;
+      }
+
+      i {
+        width: 20px;
+      }
     }
   }
 }
