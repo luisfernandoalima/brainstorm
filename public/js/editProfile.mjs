@@ -11,7 +11,7 @@ import ToastifyPopUp from "./models/Toastify.mjs";
 var errorMessage = new ToastifyPopUp();
 
 // IMask
-import NewMask from "./models/Imask.mjs";
+import NewMask from "./models/IMask.mjs";
 
 const inputCell = new NewMask("#userCellInput", "(00) 00000-0000");
 inputCell.createMask();

@@ -153,24 +153,30 @@ main .row .logo-area h1 {
   color: #fffafa;
   text-decoration: underline;
 }
-main .row > div {
+main .row .logo-area,
+main .row .form-div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
 }
-main .row > div h2 {
+main .row .logo-area h2,
+main .row .form-div h2 {
   font-family: "Domine";
   color: #06bfad;
   text-decoration: underline;
 }
-main .row > div form {
-  margin: 60px 0px;
-  width: 100%;
+main .row .logo-area .second-col,
+main .row .form-div .second-col {
+  padding-right: 0;
 }
-main .row > div form h3 {
-  text-align: center;
+main .row .logo-area .inputPassword-div,
+main .row .form-div .inputPassword-div {
+  background-color: #fffafa;
+}
+main .row form i {
+  width: 20px;
 }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=signin.css.map */
