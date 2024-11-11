@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f2e4dc;
+}
+
+.disable {
+  display: none !important;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: 270deg;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f2e4dc;
+}
+
+.disable {
+  display: none !important;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: 270deg;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+form .input-area {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+form .input-area label {
+  font-size: 18px;
+}
+form .input-area input {
+  display: block;
+  border: 2px solid #1c1c1c;
+  border-radius: 20px;
+  padding: 3px 10px;
+  width: 100%;
+  font-size: 18px;
+}
+form .input-area input:focus {
+  outline: none;
+  border-color: #f25c84;
+}
+form .input-area .inputPassword-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 2px solid #1c1c1c;
+  border-radius: 20px;
+  padding-right: 10px;
+  width: 100%;
+}
+form .input-area .inputPassword-div input {
+  border: none;
+}
+form .input-area .inputPassword-div i:hover {
+  cursor: pointer;
+}
+form .input-area .inputPassword-div:focus-within {
+  border-color: #f25c84;
+}
+form .btn-submit {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 3px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f25c84;
+  color: #fffafa;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+form .btn-submit:hover {
+  background-color: #d71146;
+}
+form .btn-submit:disabled {
+  background-color: #a7a7a7;
+  cursor: pointer;
+}
+
+header,
+footer {
+  display: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+}
+main .row {
+  width: 100%;
+}
+main .row .logo-area {
+  background-color: #f28749;
+}
+main .row .logo-area img {
+  width: 280px;
+  border: 5px solid #fffafa;
+  border-radius: 50%;
+}
+main .row .logo-area h1 {
+  margin-top: 25px;
+  font-family: "Domine";
+  color: #fffafa;
+  text-decoration: underline;
+}
+main .row .logo-area,
+main .row .form-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+main .row .logo-area h2,
+main .row .form-div h2 {
+  font-family: "Domine";
+  color: #06bfad;
+  text-decoration: underline;
+}
+main .row .logo-area .second-col,
+main .row .form-div .second-col {
+  padding-right: 0;
+}
+main .row .logo-area .inputPassword-div,
+main .row .form-div .inputPassword-div {
+  background-color: #fffafa;
+}
+main .row form {
+  margin: 30px 0px;
+  width: 100%;
+}
+main .row form h3 {
+  text-align: center;
+}
+main .row form i {
+  width: 20px;
+}
+
+/*# sourceMappingURL=signin.css.map */

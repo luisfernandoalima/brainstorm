@@ -1,0 +1,247 @@
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+
+.user-info {
+  margin-top: 50px;
+  background-color: $white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 4px 6px 8px #00000073;
+
+  hr {
+    display: none;
+  }
+
+  .profile-info-div {
+    .profile-picture {
+      @include flex(center, center, row);
+      img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 3px solid $black;
+        object-fit: cover;
+      }
+    }
+    .profile-info {
+      @include flex(center, center, column);
+
+      .info-container {
+        margin-top: 10px;
+        width: 100%;
+        p {
+          margin: 0px;
+        }
+      }
+
+      button {
+        background-color: $backgroundColor;
+        border: none;
+        border-radius: 20px;
+        padding: 5px 15px;
+        margin-top: 10px;
+        width: 80%;
+        box-shadow: 0px 6px 8px #00000073;
+        transition: 0.3s;
+
+        a {
+          display: block;
+          width: 100%;
+          text-decoration: none;
+          color: $pink;
+          font-weight: bold;
+        }
+
+        &:hover {
+          background-color: darken($backgroundColor, 10%);
+        }
+      }
+    }
+  }
+
+  .profile-plan-div {
+    position: relative;
+    border-radius: 20px;
+    height: 100%;
+
+    & > a {
+      @include flex(center, center, row);
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 30px;
+      font-size: 30px;
+      text-decoration: none;
+      color: $orange;
+      i:hover {
+        animation: rotate 1.5s normal linear infinite;
+      }
+    }
+  }
+
+  .profile-plan {
+    @include flex(center, center, column);
+    height: 65%;
+
+    i {
+      font-size: 50px;
+    }
+
+    h1 {
+      font-family: "Domine", serif;
+      font-size: 2em;
+      text-align: center;
+    }
+    .bronze {
+      color: $bronze;
+    }
+    .silver {
+      color: $silver;
+    }
+    .gold {
+      color: $gold;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  .profile-plan-div-bronze {
+    background-color: mix($bronze, $white);
+  }
+  .profile-plan-div-silver {
+    background-color: mix($silver, $white);
+  }
+  .profile-plan-div-gold {
+    background-color: mix($gold, $white);
+  }
+
+  .plan-members {
+    border-top: 2px solid $black;
+
+    h2 {
+      font-size: 16px;
+      margin-left: 15px;
+    }
+
+    .img-members {
+      margin: auto;
+      width: 90%;
+    }
+
+    .member {
+      @include flex(center, center, column);
+      width: 100%;
+      height: 100%;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+
+        i {
+          @include flex(center, center, row);
+          height: 41px;
+          width: 41px;
+          border: 3px solid $pink;
+          border-radius: 50%;
+          padding: 5px;
+          font-size: 25px;
+          color: $pink;
+          transition: 0.3s;
+
+          &:hover {
+            border-color: darken($pink, 30%);
+            color: darken($pink, 30%);
+          }
+        }
+      }
+    }
+  }
+
+  .profile-history-div {
+    height: 100%;
+    p {
+      color: $blue;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 23px;
+      text-decoration: underline;
+    }
+
+    .profile-history {
+      @include flex(center, start, column);
+      height: 325px;
+      overflow: auto;
+
+      .place-card {
+        width: 85%;
+        padding: 5px;
+        margin: 5px 0px;
+        border-radius: 10px;
+        border: 2px solid $black;
+        text-decoration: none;
+
+        .col-5 {
+          @include flex(center, center, row);
+        }
+        img {
+          width: 100%;
+          border-radius: 5px;
+          margin: 5px;
+        }
+
+        .place-info {
+          @include flex(center, space-between, column);
+          p {
+            color: $black;
+            font-size: 16px;
+            text-align: justify;
+            margin-bottom: 5px;
+          }
+
+          button {
+            border: none;
+            border-radius: 30px;
+            background-color: $blue;
+            color: white;
+            padding: 1px;
+            width: 100%;
+            transition: 0.3s;
+
+            &:hover {
+              background-color: darken($blue, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    .col-sm-12 {
+      margin-bottom: 25px;
+    }
+
+    hr {
+      display: block;
+    }
+  }
+
+  .profile-plan-div{
+    height: fit-content !important;
+  }
+}

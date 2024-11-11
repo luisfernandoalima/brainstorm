@@ -1,0 +1,62 @@
+<main>
+  <div class="row">
+    <div class="col-md-6 logo-area">
+        <img src="img/icon/brainstormLogo.png" alt="">
+        <h1>BRAINSTORM</h1>
+    </div>
+    <div class="col-md-6 form-div">
+      <h2>BEM-VINDO</h2>
+      <form action="" method="post">
+        <h3>Cadastre-se</h3>
+        <div class="input-area">
+            <label for="signinName">Nome: </label>
+            <input type="text" name="signinName" id="signinName" required>
+        </div>
+        <div class="input-area">
+          <label for="signinEmail">E-mail: </label>
+          <input type="email" name="signinEmail" id="signinEmail" required/>
+        </div>
+        <div class="input-area">
+            <label for="signinCPF">CPF: </label>
+            <input type="text" name="signinCPF" id="signinCPF" placeholder="000.000.000-00" required>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="input-area">
+                    <label for="signinBirth">Data de nascimento</label>
+                    <input type="date" name="signinBirth" id="signinBirth" required>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 second-col">
+                <div class="input-area">
+                    <label for="signinPhone">Telefone: </label>
+                    <input type="tel" name="signinPhone" id="signinPhone" placeholder="(99) 99999-9999" minlength="15" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="input-area">
+                    <label for="signinPassword">Senha: </label>
+                    <div class="inputPassword-div">
+                        <input type="password" name="signinPassword" id="signinPassword" required>
+                        <span><i class="fa-solid fa-eye passwordViewButton"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 second-col">
+                <div class="input-area">
+                    <label for="signinRepeatPassword">Confirmar senha: </label>
+                    <div class="inputPassword-div">
+                        <input type="password" name="signinRepeatPassword" id="signinRepeatPassword" required>
+                        <span><i class="fa-solid fa-eye repeatPasswordViewButton"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn-submit">Confirmar</button>
+      </form>
+      <a href="/login">Já possui conta? Entre aqui!</a>
+    </div>
+  </div>
+</main>
