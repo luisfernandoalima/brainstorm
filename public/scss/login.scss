@@ -1,0 +1,53 @@
+@import "variables.scss";
+@import "object/form.scss";
+
+header,
+footer {
+  display: none;
+}
+
+main {
+  @include flex(center, center, row);
+  height: 100vh;
+
+  .row {
+    width: 100%;
+
+    .logo-area {
+      background-color: $orange;
+
+      img{
+        width: 280px;
+        border:5px solid $white;
+        border-radius: 50%
+      }
+    }
+
+    & > div {
+      @include flex(center, center, column);
+      height: 100vh;
+      h1 {
+        margin-top: 25px;
+        font-family: "Domine";
+        color: $white;
+        text-decoration: underline;
+      }
+
+      h2{
+        font-family: "Domine";
+        color: $blue;
+        text-decoration: underline;
+      }
+
+      form {
+        margin: 60px 0px;
+        width: 100%;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+    }
+  }
+}
